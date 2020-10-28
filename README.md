@@ -79,13 +79,14 @@ git clone https://github.com/susovd/life-expectancy-project
 ```
 2. Ensure you have the following [Python](https://www.python.org/downloads/) version 3.6 or later installed.
 3. Ensure you have the libraries listed in [requirements.txt](requirements.txt) installed. An easy way to do so is to type
-  ```sh
+```sh
   $ pip install -r requirements.txt
 ```
 4. Get a free API Key at _mapbox_ [https://www.mapbox.com/](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file.
 5. To set up your database, comment out _line 17_ (that is for the heroku version) and comment in _lines 24-28_ (local version) in **initdb.py**. Then, run    
 ```sh
 $ python initdb.py.
+```
 
 6. Run app.py and you are all set. Open up the flask page
 ```sh
