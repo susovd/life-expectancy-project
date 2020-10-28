@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href=>
-    <img src="static/images/2.png" alt="Logo" width="200" height="200">
+    <img src="static/images/logo.jpg" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning Project</h3>
