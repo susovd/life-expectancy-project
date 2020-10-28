@@ -44,10 +44,7 @@ According to the ABS, the Australian population is set to double by 2066, which 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS#:~:text=Cascading%20Style%20Sheets%20%28CSS%29%20is%20a%20stylesheet%20language,on%20paper%2C%20in%20speech%2C%20or%20on%20other%20media.)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
   * [d3.js](https://d3js.org/)
-  * [Leaflet](https://leafletjs.com/)
-  * [SweetAlert](https://sweetalert.js.org/guides/)
-  * [Image-map](https://www.npmjs.com/package/image-map)
-  * [Plotly](https://plotly.com/javascript/)
+
 
 
 <!-- USAGE EXAMPLES -->
