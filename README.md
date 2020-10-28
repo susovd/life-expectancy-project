@@ -4,13 +4,13 @@
 <br />
 <p align="center">
   <a href=>
-    <img src="static/images/logo.jpg" alt="Logo" width="200" height="200">
+    <img src="Static/Images/logo.JPG" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning Project</h3>
   
    
-    <br />
+  <br />
 </p>
 </p>
 
