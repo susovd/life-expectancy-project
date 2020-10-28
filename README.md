@@ -19,11 +19,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
 * [Usage](#usage)
 * [Getting Started](#getting-started)
-  * [Heroku](#heroku)
-  * [Local](#local)
+* [Heroku](#heroku)
+* [Local](#local)
 * [Contributors](#contributors)
 
 
@@ -52,11 +52,11 @@ According to the ABS, the Australian population is set to double by 2066, which 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-We have provided an abbreviated dashboard of the world demographics on heroku. The dashboard contains only demographic data from 1980-2019 (unfortunately, due to the row limit in the free version of Heroku Postgres!).
+We have provided an abbreviated dashboard of the Life Epectancy on heroku. The dashboard contains only demographic data from 2000-2020 **
 
-Click on the link to explore and interact with our [Dashboard](https://world-demographics.herokuapp.com)
+Click on the link to explore and interact with our [Dashboard](*********)
 
-![Dashboard](/static/images/dashboard.gif)
+![Dashboard](/static/images/dashboard.gif ***** )
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -68,42 +68,26 @@ If you wish to run a local version with the full dataset, skip to [Local](#local
 2. Sign up for an [Heroku](https://www.heroku.com/) account.
 3. Sign up for [mapbox](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file. Remember to restrict your mapbox api key to your app url, so you don't get hit with nasty charges!!!
 4. Connect your github page to a new Heroku app, and click **'Deploy'**.
-5. Add your database to your Heroku app. To do so - 
-    * add-on Heroku Postgres to your app
-    * grab your Postgres database URI from Heroku Postgres > Settings > View Credentials
-    * in the **initdb.py** file, replace 'heroku_postgres_uri' on line 15 with the uri you just obtained
-    * run the following. Don't worry if it is slow, it will take a while for the database to populate.
-      ```sh
-      $ python initdb.py
-      ```
+5. Add your database to your Heroku app. 
 6. And now you are all set. Have fun with your new app!
 
 ### Local
 **To get a local copy up and running follow these steps.**
 1. Clone our directory down to your local machine.
 ```sh
-git clone https://github.com/YannChye/noPreferenceInCamelCase.git
+git clone https://github.com/susovd/life-expectancy-project
 ```
 2. Ensure you have the following [Python](https://www.python.org/downloads/) version 3.6 or later installed.
 3. Ensure you have the libraries listed in [requirements.txt](requirements.txt) installed. An easy way to do so is to type
   ```sh
   $ pip install -r requirements.txt
-  ```
-4. Download a version of [PostgreSQL](https://www.postgresql.org/download/) onto your machine, and enter your PostgreSQL password in `password.py`
-```PY
-username='postgres'
-passord='password123'
 ```
-5. Get a free API Key at _mapbox_ [https://www.mapbox.com/](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file.
-6. To set up your database, comment out _line 17_ (that is for the heroku version) and comment in _lines 24-28_ (local version) in **initdb.py**. Then, run    
+4. Get a free API Key at _mapbox_ [https://www.mapbox.com/](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file.
+5. To set up your database, comment out _line 17_ (that is for the heroku version) and comment in _lines 24-28_ (local version) in **initdb.py**. Then, run    
 ```sh
-$ python initdb.py
-```
-7. To run your page, first run the following line in your terminal/git bash, replacing _username_ and _password_ with your postgres username and password
-```sh
-$ export DATABASE_URL=postgresql://username:password@localhost/world_population
-```
-8. Run app.py and you are all set. Open up the flask page and have fun!
+$ python initdb.py.
+
+6. Run app.py and you are all set. Open up the flask page
 ```sh
 $ python app.py
 ```
