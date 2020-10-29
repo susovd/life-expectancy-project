@@ -20,8 +20,9 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
+* [Feature list](#Feature-list)
+* [Overview of steps](#Overview-of-steps)
 * [Usage](#usage)
-* [Feature list](#Feature list)
 * [Getting Started](#getting-started)
 * [Heroku](#heroku)
 * [Local](#local)
