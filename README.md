@@ -107,7 +107,7 @@ If you wish to run a local version with the full dataset, skip to [Local](#local
 
 * Alex Lawson
 * Ashley Drayton
-* Rishi Sheth
+* Rishit Sheth
 * Susov Dhakal
 * Vineet Goyal
 
