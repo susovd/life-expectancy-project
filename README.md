@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href=>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS__W6OLuocXF5l1T6fqQI6sJkIVcfGB9trIw&usqp=CAU" alt="Logo" width="200" height="200">
+    <img src="https://64.media.tumblr.com/e0b750d43e878b3958f5aeef474ea1f5/tumblr_mjgwdnOS1f1s2gg27o1_250.gif" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning </h3>
@@ -34,11 +34,11 @@
 ## About The Project
 Life expectancy refers to the number of years a person is expected to live based on the statistical average. Life expectancy varies by geographical area and by era. In the Bronze age, for example, life expectancy was 26 years, while in 2010, it was 67 years.
 
-# Why we think this project is important?
+### Why we think this project is important?
 According to the ABS, the Australian population is set to double by 2066, which got us to thinking ...  What have been the macro trends for things like life expectancy, birth rates, population size and growth and how do they compare with the rest of the world?  So, like all good data nerds we went looking. 
 
 
-### Built With
+## Built With
 * Python
 * Javascript
 * certifi==2020.6.20
