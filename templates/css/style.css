@@ -83,7 +83,7 @@ body {
     margin: 2px auto 2px auto;
     padding:5px;
     font-size:20px;
-    background-color:#cccbcb;
+    background-color:#dfdfdfd3;
     color:#000000;
 }
 
@@ -131,4 +131,28 @@ body {
     background: #cccbcb;
     padding: 50px;
     text-align: center;
+}
+
+#predict {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+    width: 10%;
+}
+
+#answer {
+    display: table; 
+    margin: 2px auto 2px auto;
+    padding:5px;
+    font-size:20px;
+    background-color:#fffefeda;
+    color:#000000;
 }

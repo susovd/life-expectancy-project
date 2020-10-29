@@ -48,58 +48,57 @@
 
     <!-- Tableau Visualisations here-->
     <div class="container" id="graphs">
-        <div class="row" >
-            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
 
-                        <h2>Visualising Life Expectency</h2>
+                        <h1>Visualising Life Expectency</h1>
                         <hr>
-                        <p class="p1">Use the option panel to view the data in any of the following ways</p>
-                        
-                        <!--Copy Pasta Tableau code-->    
+                        <div class="login">
+                            <h2>Predict Salary Analysis</h2>
+
+                            <!-- Main Input For Receiving Query to our ML -->
+                            <form action="{{ url_for('predict')}}" method="post">
+                                <input type="text" name="experience" placeholder="Experience" required="required" />
+                                <input type="text" name="test_score" placeholder="Test Score" required="required" />
+                                <input type="text" name="interview_score" placeholder="Interview Score"
+                                    required="required" />
+
+                                <button type="submit" class="btn btn-primary btn-block btn-large"
+                                    id="predict">Predict</button>
+                            </form>
+                            <br>
+                            <div id="answer">{{ prediction_text }}
+                            </div>
+                        </div>
+                        <!--Copy Pasta Tableau code-->
                         <br>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h2>Option Panel</h2>
-                        <hr>
-                        <div class="row">
-                            <div class="clm">
-                                    <button onclick="window.location.href='visualisations.html'" class="btn">Country</button>
-                            </div>
-                    
-                            <div class="clm">
-                                    <button style=top:45% onclick="window.location.href='about_us.html'" class="btn">Confirm</button>
-                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <br>
-        <!-- Footer section consisting of contributors -->
-        <footer class="py-3 bg-light">
-            <div class="container">
-                <p class="text-center"><strong>
-                        Developers: <a href="https://github.com/ashdrayton" target="_blank">Ash Drayton</a> |
-                        <a href="https://github.com/alexlawson274" target="_blank">Alex Lawson</a> |
-                        <a href="https://github.com/susovd" target="_blank">Susov Dhakal</a> |
-                        <a href="https://github.com/Rishi0406" target="_blank">Rishit Sheth</a> |
-                        <a href="https://github.com/vineetgoyal01" target="_blank">Vineet Goyal</a>
-                    </strong>
-                </p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+    <!-- Footer section consisting of contributors -->
+    <footer class="py-3 bg-light">
+        <div class="container">
+            <p class="text-center"><strong>
+                    Developers: <a href="https://github.com/ashdrayton" target="_blank">Ash Drayton</a> |
+                    <a href="https://github.com/alexlawson274" target="_blank">Alex Lawson</a> |
+                    <a href="https://github.com/susovd" target="_blank">Susov Dhakal</a> |
+                    <a href="https://github.com/Rishi0406" target="_blank">Rishit Sheth</a> |
+                    <a href="https://github.com/vineetgoyal01" target="_blank">Vineet Goyal</a>
+                </strong>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
