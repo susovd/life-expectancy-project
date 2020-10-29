@@ -5,8 +5,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-/* https://inspirationhut.net/wp-content/uploads/2013/05/201.png
-https://media.gettyimages.com/photos/white-gray-marble-texture-background-with-detail-structure-high-picture-id1078387922?b=1&k=6&m=1078387922&s=612x612&w=0&h=MhBX6wlOfsZNErUbLgRCFZQ54VJYO1_dBn6rEo2eV88= */
 
 .jumbotron {
     background: url("https://cdn.hipwallpaper.com/i/61/85/PXt2QA.jpg");
@@ -98,7 +96,7 @@ https://media.gettyimages.com/photos/white-gray-marble-texture-background-with-d
 
 .flip-box {
   background-color: transparent;
-  width: 350px;
+  width: 325px;
   height: 350px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
