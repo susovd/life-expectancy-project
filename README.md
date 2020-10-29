@@ -4,10 +4,10 @@
 <br />
 <p align="center">
   <a href=>
-    <img src="Static/Images/logo.JPG" alt="Logo" width="200" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS__W6OLuocXF5l1T6fqQI6sJkIVcfGB9trIw&usqp=CAU" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center"> Life expectancy prediction with Machine Learning Project</h3>
+  <h3 align="center"> Life expectancy prediction with Machine Learning </h3>
   
    
   <br />
@@ -21,6 +21,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Usage](#usage)
+* [Feature list](#Feature list)
 * [Getting Started](#getting-started)
 * [Heroku](#heroku)
 * [Local](#local)
@@ -32,19 +33,43 @@
 ## About The Project
 Life expectancy refers to the number of years a person is expected to live based on the statistical average. Life expectancy varies by geographical area and by era. In the Bronze age, for example, life expectancy was 26 years, while in 2010, it was 67 years.
 
-## Why we think this project is important?
+# Why we think this project is important?
 According to the ABS, the Australian population is set to double by 2066, which got us to thinking ...  What have been the macro trends for things like life expectancy, birth rates, population size and growth and how do they compare with the rest of the world?  So, like all good data nerds we went looking. 
 
 
 ### Built With
-* [Python](https://www.python.org/about/)
-  * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html)
-  * [Flask](https://flask-doc.readthedocs.io/en/latest/)
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS#:~:text=Cascading%20Style%20Sheets%20%28CSS%29%20is%20a%20stylesheet%20language,on%20paper%2C%20in%20speech%2C%20or%20on%20other%20media.)
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
-  * [d3.js](https://d3js.org/)
+* Python
+* Javascript
+* certifi==2020.6.20
+* click==7.1.2
+* Flask==1.1.2
+* gunicorn==20.0.4
+* itsdangerous==1.1.0
+* Jinja2==2.11.2
+* joblib==0.17.0
+* MarkupSafe==1.1.1
+* numpy==1.19.3
+* scikit-learn==0.23.2
+* scipy==1.5.3
+* sklearn==0.0
+* threadpoolctl==2.1.0
+* Werkzeug==1.0.1
+* wincertstore==0.2
 
+
+## Feature list (Need to update from final version)
+* Country- Country
+* Year- YearStatus- Developed or Developing status
+* Life Expectancy- Age(years)
+* Adult Mortality- Adult Mortality Rates of both sexes
+* Percent Expenditure- Expenditure on health as a percentage of Gross Domestic Product per capita(%)
+
+## Overview of steps: 
+
+* Step1: Identify independent variables for dependent variable life expectancy. Clean raw data. 
+* Step2: Import cleaned raw data to Hive and merge tables based on country names 
+* Step3: Use Pyspark MLLib to do regression or decision tree to find relationship between life expectancy and all different variables. Use Scikit-learn to do regression or decision tree 
+* Step4: Visualize the results using Tableau
 
 
 <!-- USAGE EXAMPLES -->
@@ -53,7 +78,6 @@ We have provided an abbreviated dashboard of the Life Epectancy on heroku. The d
 
 Click on the link to explore and interact with our [Dashboard](*********)
 
-![Dashboard](/static/images/dashboard.gif ***** )
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -68,27 +92,14 @@ If you wish to run a local version with the full dataset, skip to [Local](#local
 5. Add your database to your Heroku app. 
 6. And now you are all set. Have fun with your new app!
 
-### Local
-**To get a local copy up and running follow these steps.**
-1. Clone our directory down to your local machine.
-```sh
-git clone https://github.com/susovd/life-expectancy-project
-```
-2. Ensure you have the following [Python](https://www.python.org/downloads/) version 3.6 or later installed.
-3. Ensure you have the libraries listed in [requirements.txt](requirements.txt) installed. An easy way to do so is to type
-```sh
-  $ pip install -r requirements.txt
-```
-4. Get a free API Key at _mapbox_ [https://www.mapbox.com/](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file.
-5. To set up your database, comment out _line 17_ (that is for the heroku version) and comment in _lines 24-28_ (local version) in **initdb.py**. Then, run    
-```sh
-$ python initdb.py.
-```
 
-6. Run app.py and you are all set. Open up the flask page
-```sh
-$ python app.py
-```
+## Future Work
+
+* Look at class within a particular country and see if these same factors are same in determining life expectancy for an individual. 
+* Use the Twitter API to incorporate NLP analysis for a country to see how it relates to Life Expectancy. 
+* Increase the dataset size with continuing UN and Global Data to incorporate new added features like population, GDP,  environmental, and etc in order to test and clarify country groupings.  
+* Mental Health versus Life Expectancy
+
 
 <!-- CONTRIBUTORS -->
 ## Contributors
@@ -104,4 +115,4 @@ $ python app.py
 
 
 
-## Thank you for your time to read our project.
+## Thank you for your time to read our project. We hope you enjoyed it.
