@@ -127,6 +127,13 @@ body {
   transform: rotateY(180deg);
 }
 
+#predict_table {
+    background: #cccbcb;
+    margin-top: 75px;
+    padding: 20px;
+    text-align: center;
+}
+
 #graphs {
     background: #cccbcb;
     padding: 50px;
@@ -145,14 +152,14 @@ body {
     border-radius: 5px;
     text-align: center;
     margin-top: 40px;
-    width: 10%;
+    width: 12.5%;
 }
 
 #answer {
     display: table; 
     margin: 2px auto 2px auto;
-    padding:5px;
+    padding:2px;
     font-size:20px;
-    background-color:#fffefeda;
+    background-color:#fffefe;
     color:#000000;
 }

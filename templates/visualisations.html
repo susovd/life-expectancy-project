@@ -55,27 +55,11 @@
 
                         <h1>Visualising Life Expectency</h1>
                         <hr>
-                        <div class="login">
-                            <h2>Predict Salary Analysis</h2>
-
-                            <!-- Main Input For Receiving Query to our ML -->
-                            <form action="{{ url_for('predict')}}" method="post">
-                                <input type="text" name="experience" placeholder="Experience" required="required" />
-                                <input type="text" name="test_score" placeholder="Test Score" required="required" />
-                                <input type="text" name="interview_score" placeholder="Interview Score"
-                                    required="required" />
-
-                                <button type="submit" class="btn btn-primary btn-block btn-large"
-                                    id="predict">Predict</button>
-                            </form>
-                            <br>
-                            <div id="answer">{{ prediction_text }}
-                            </div>
-                        </div>
-
+                        
                         <div>
                         <!--Copy Pasta Tableau code-->    
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -80,7 +80,38 @@
                 </div>
         </div>      
     </div>
-                
+       
+        <!-- Tableau Visualisations here-->
+        <div class="container" id="predict_table" style="width: 40%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">   
+                            <h2>Predict Salary Analysis</h2>
+                            <hr>
+                            <div class="login">
+                                <!-- Main Input For Receiving Query to our ML -->
+                                <p style="font-size: 20px;">Try out our model here!</p>
+                                <form action="{{ url_for('predict')}}" method="post">
+                                    <input type="text" name="experience" placeholder="Experience" required="required" />
+                                    <input type="text" name="test_score" placeholder="Test Score" required="required" />
+                                    <input type="text" name="interview_score" placeholder="Interview Score"
+                                        required="required" />
+    
+                                    <button type="submit" class="btn btn-primary btn-block btn-large"
+                                        id="predict">Predict</button>
+                                </form>
+                                <br>
+                                <div id="answer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
     <a href="http://datatopics.worldbank.org/world-development-indicators/" target= "_blank">
         <div id="worldbank" target="_blank">
             <img src="https://www.worldbank.org/content/dam/wbr/logo/logo-wb-header-en.svg"
