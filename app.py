@@ -1,31 +1,27 @@
-# import necessary libraries
-import os
-from flask import (
-    Flask,
-    render_template,
-    jsonify,
-    request,
-    redirect)
+import numpy as np
+from flask import Flask, request, render_template
+import pickle
 
-#################################################
-# Flask Setup
-#################################################
 app = Flask(__name__)
+model = pickle.load(open('model.pkl', 'rb'))
 
-
-# create route that renders index.html template
-@app.route("/")
+@app.route('/')
 def home():
-    return render_template("index.html")
-
-@app.route("/about_us.html")
-def about_us():
-    return render_template("about_us.html")
-
-@app.route("/visualisations.html")
-def visualisations():
-    return render_template("visualisations.html")   
+    return render_template('index.html')
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+@app.route('/predict', methods = ['POST'])
+def predict():
+    '''
+    for rendering results on html GUI
+    '''
+    int_features = [int(x) for x in request.form.values()]
+    final_features = [np.array(int_features)]
+    prediction = model.predict(final_features)
+    output = prediction[0]
+    return render_template('index.html', prediction_text = "The estimated life expectancy is {}".format(output))
+
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
