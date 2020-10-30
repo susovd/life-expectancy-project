@@ -25,7 +25,6 @@
 * [Usage](#usage)
 * [Getting Started](#getting-started)
 * [Heroku](#heroku)
-* [Local](#local)
 * [Contributors](#contributors)
 
 
@@ -40,7 +39,6 @@ According to the ABS, the Australian population is set to double by 2066, which 
 
 ## Built With
 * Python
-* Javascript
 * certifi==2020.6.20
 * click==7.1.2
 * Flask==1.1.2
@@ -67,9 +65,9 @@ According to the ABS, the Australian population is set to double by 2066, which 
 
 ## Overview of steps: 
 
-* Step1: Identify independent variables for dependent variable life expectancy. Clean raw data. 
+* Step1: Clean raw data. Identify independent variables for dependent variable life expectancy.  
 * Step2: Import cleaned raw data to Hive and merge tables based on country names 
-* Step3: Use Pyspark MLLib to do regression or decision tree to find relationship between life expectancy and all different variables. Use Scikit-learn to do regression or decision tree 
+* Step3: Use Scikit-learn to do regression to find relationship between life expectancy and all different variables.  
 * Step4: Visualize the results using Tableau
 
 
@@ -88,10 +86,9 @@ If you wish to run a local version with the full dataset, skip to [Local](#local
 **To get your own database and app up and running on heroku, follow these steps.**
 1. Fork our directory on github.
 2. Sign up for an [Heroku](https://www.heroku.com/) account.
-3. Sign up for [mapbox](https://www.mapbox.com/), and replace your api key with ours on the _/static/js/config.js_ file. Remember to restrict your mapbox api key to your app url, so you don't get hit with nasty charges!!!
-4. Connect your github page to a new Heroku app, and click **'Deploy'**.
-5. Add your database to your Heroku app. 
-6. And now you are all set. Have fun with your new app!
+3. Connect your github page to a new Heroku app, and click **'Deploy'**.
+4. Add your database to your Heroku app. 
+5. And now you are all set. Have fun with your new app!
 
 
 ## Future Work
