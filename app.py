@@ -22,6 +22,16 @@ def predict():
     return render_template('index.html', prediction_text = "The estimated life expectancy is {}".format(output))
 
 
+@app.route("/visualisations")
+def tech():
+    return render_template("visualisations.html")
+
+@app.route("/about")
+def about():
+    return render_template("about_us.html")
+
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
