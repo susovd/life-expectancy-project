@@ -3,7 +3,7 @@
 <!---Project Logo -->
 <p align="center">
   <a href=>
-    <img src="static/images/visualisations.png" alt="Logo" width="200" height="200">
+    <img src="/static/images/visualisations.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning </h3>
@@ -29,66 +29,29 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Life expectancy refers to the number of years a person is expected to live based on the statistical average. Life expectancy varies by geographical area and by era. In the Bronze age, for example, life expectancy was 26 years, while in 2010, it was 67 years.
-
-### Why we think this project is important?
-According to the ABS, the Australian population is set to double by 2066, which got us to thinking ...  What have been the macro trends for things like life expectancy, birth rates, population size and growth and how do they compare with the rest of the world?  So, like all good data nerds we went looking. 
-
+Life expectancy refers to the number of years a person is expected to live based on the statistical average and depends on numerous socio-economic factors besides death. It is an important metric to assess population health. Life expectancy, education index and gross domestic product combine to provide Human Development Index. 
+For the project we downloaded data from workld bank website [here](http://datatopics.worldbank.org/world-development-indicators/).
 
 ## Built With
-* Python
-* certifi==2020.6.20
-* click==7.1.2
-* Flask==1.1.2
-* gunicorn==20.0.4
-* itsdangerous==1.1.0
-* Jinja2==2.11.2
-* joblib==0.17.0
-* MarkupSafe==1.1.1
-* numpy==1.19.3
-* scikit-learn==0.23.2
-* scipy==1.5.3
-* sklearn==0.0
-* threadpoolctl==2.1.0
-* Werkzeug==1.0.1
-* wincertstore==0.2
-
-
-## Overview of steps: 
-
-* Step1: Clean raw data. Identify independent variables for dependent variable life expectancy.  
-* Step2: Import cleaned raw data to Hive and merge tables based on country names 
-* Step3: Use Scikit-learn to do regression to find relationship between life expectancy and all different variables.  
-* Step4: Visualize the results using Tableau
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-We have provided an abbreviated dashboard of the Life Epectancy on heroku. The dashboard contains only demographic data from 2000-2020 **
-
-Click on the link to explore and interact with our [Dashboard](*********)
+* [Python](https://www.python.org/about/)
+  * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html)
+  * [Flask](https://flask-doc.readthedocs.io/en/latest/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS#:~:text=Cascading%20Style%20Sheets%20%28CSS%29%20is%20a%20stylesheet%20language,on%20paper%2C%20in%20speech%2C%20or%20on%20other%20media.)
+* [scikit-learn](https://scikit-learn.org/stable/)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-If you wish to run a local version with the full dataset, skip to [Local](#local). If you wish to run a scaled down version on your own Heroku app, follow the following [Heroku](#heroku) steps.
-
-### Heroku
-**To get your own database and app up and running on heroku, follow these steps.**
-1. Fork our directory on github.
-2. Sign up for an [Heroku](https://www.heroku.com/) account.
-3. Connect your github page to a new Heroku app, and click **'Deploy'**.
-4. Add your database to your Heroku app. 
-5. And now you are all set. Have fun with your new app!
-
+* 00ETL.ipynb notebooks contains codesfor ETL of data. 
+* 01EDA.ipynb contains exploratory data analysis. 
+* 02_Multiple_regression.ipynb contains codes for multiple linear regression.
+* model.py can be called from the root directory to train and save the model. It also houses the flask app that will allow the user to input values for birth rate, fertility  rate and Tuberculosis incidence per 100,000 people. 
+* index.html houses a website accompanying the the flask app. 
 
 ## Future Work
 
-* Look at class within a particular country and see if these same factors are same in determining life expectancy for an individual. 
-* Use the Twitter API to incorporate NLP analysis for a country to see how it relates to Life Expectancy. 
-* Increase the dataset size with continuing UN and Global Data to incorporate new added features like population, GDP,  environmental, and etc in order to test and clarify country groupings.  
-* Mental Health versus Life Expectancy
-
+The project is at an extremely rudimentary and crude stage. Significant changes will be made with time. 
 
 <!-- CONTRIBUTORS -->
 ## Contributors
