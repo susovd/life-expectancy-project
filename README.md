@@ -1,16 +1,15 @@
 # Life Expectancy Prediction 
 
 <!---Project Logo -->
-<br />
 <p align="center">
   <a href=>
-    <img src="https://64.media.tumblr.com/e0b750d43e878b3958f5aeef474ea1f5/tumblr_mjgwdnOS1f1s2gg27o1_250.gif" alt="Logo" width="200" height="200">
+    <img src="static/images/visualisations.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning </h3>
   
    
-  <br />
+<br />
 </p>
 </p>
 
@@ -20,7 +19,6 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
-* [Feature list](#Feature-list)
 * [Overview of steps](#Overview-of-steps)
 * [Usage](#usage)
 * [Getting Started](#getting-started)
@@ -55,13 +53,6 @@ According to the ABS, the Australian population is set to double by 2066, which 
 * Werkzeug==1.0.1
 * wincertstore==0.2
 
-
-## Feature list (Need to update from final version)
-* Country- Country
-* Year- YearStatus- Developed or Developing status
-* Life Expectancy- Age(years)
-* Adult Mortality- Adult Mortality Rates of both sexes
-* Percent Expenditure- Expenditure on health as a percentage of Gross Domestic Product per capita(%)
 
 ## Overview of steps: 
 
