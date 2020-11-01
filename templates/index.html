@@ -48,14 +48,13 @@
 
     <!-- Image Grid -->
     <div class="row">
-        <div class="clm" id="img1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Visualisation_landslide_fast.gif" alt="Data" style="width: 101%;">
+        <div class="col-md-6 clm" id="img1">
+            <img src="https://cdn.pixabay.com/photo/2018/02/27/17/40/graph-3186082_960_720.png" alt="Visualisations" class="img-fluid">
             <button onclick="window.location.href='/visualisations'" class="btn">Visualisations</button>
         </div>
 
-        <div class="clm" id="img1">
-            <img src="https://www.1seouzmani.com/en/wp-content/uploads/2020/04/about_us.jpg" alt="Data"
-                style="width:101%">
+        <div class="cold-md-6 clm" id="img1">
+            <img src="https://www.1seouzmani.com/en/wp-content/uploads/2020/04/about_us.jpg" alt="Data" class="img-fluid">
             <button onclick="window.location.href='/about'" class="btn">About Us</button>
         </div>
 
@@ -101,7 +100,9 @@
                             <br>
                             <br>
                             
-                            <div id="answer">{{ prediction_text }}</div>
+                            <div id="answer">
+                                {{ prediction_text }} 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,7 +113,7 @@
 
     <a href="http://datatopics.worldbank.org/world-development-indicators/" target="_blank">
         <div id="worldbank" target="_blank">
-            <img src="https://www.worldbank.org/content/dam/wbr/logo/logo-wb-header-en.svg"
+            <img src="https://www.worldbank.org/content/dam/wbr/logo/logo-wb-header-en.svg" alt="WorldBank"
                 style="width:100%;max-width:700px" class="w3-margin-top">
         </div>
     </a>
