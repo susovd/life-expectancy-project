@@ -3,7 +3,7 @@
 <!---Project Logo -->
 <p align="center">
   <a href=>
-    <img src="/static/images/visualisations.png" alt="Logo" width="200" height="200">
+    <img src="/Static/Images/visualisations.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center"> Life expectancy prediction with Machine Learning </h3>
@@ -19,10 +19,9 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
-* [Overview of steps](#Overview-of-steps)
-* [Usage](#usage)
 * [Getting Started](#getting-started)
 * [Heroku](#heroku)
+* [Future Work](#future-work)
 * [Contributors](#contributors)
 
 
@@ -48,6 +47,9 @@ For the project we downloaded data from workld bank website [here](http://datato
 * 02_Multiple_regression.ipynb contains codes for multiple linear regression.
 * model.py can be called from the root directory to train and save the model. It also houses the flask app that will allow the user to input values for birth rate, fertility  rate and Tuberculosis incidence per 100,000 people. 
 * index.html houses a website accompanying the the flask app. 
+
+## Heroku
+The web app is hosted [here](https://life-expectancy-prediction.herokuapp.com/) using Heroku.
 
 ## Future Work
 
